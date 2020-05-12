@@ -1,0 +1,1 @@
+<?phpnamespace TinyUuid;class TinyUuid{    public static function tinyUuid()    {        return 'TEST';    }}

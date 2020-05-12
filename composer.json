@@ -1,0 +1,23 @@
+{
+  "name": "vendor_name/tiny-uuid",
+  "description": "This library generates a short alphanumeric unique ID.",
+  "minimum-stability": "stable",
+  "type": "library",
+  "license": "The Unlicense",
+  "authors": [
+    {
+      "name": "Pablo Nuñez",
+      "email": "fixwah@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TinyUuid\\": "src/"
+    }
+  },
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.1"
+  }
+}
