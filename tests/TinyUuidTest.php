@@ -27,4 +27,16 @@ class TinyUuidTest extends TestCase
         $shortId = TinyUuid::tinyUuid(200);
         $this->assertEquals(128, strlen($shortId));
     }
+
+    /**
+     * Verify that the generated IDs are all alpha numeric
+     * by calling multiple times to the generator.
+     */
+    public function testGeneratesAlphanumericCharactersOnly()
+    {
+        for ($i = 0; $i < 10000; ++$i) {
+            $shortId = TinyUuid::tinyUuid(128);
+            $this->assertTrue(ctype_alnum($shortId));
+        }
+    }
 }
