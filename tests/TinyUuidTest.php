@@ -1,15 +1,30 @@
 <?php
-namespace Fixwa\TinyUuid\Test;
 
-use PHPUnit\Framework\TestCase;
+namespace Fixwa\TinyUuid\Tests;
+
 use Fixwa\TinyUuid\TinyUuid;
+use PHPUnit\Framework\TestCase;
 
 class TinyUuidTest extends TestCase
 {
 
-    public function testBasic()
+    /**
+     * Verify the defaults of the generator.
+     * Due to the nature of the generated IDs, it's not
+     * easy to validate what the returned ID would be.
+     */
+    public function testBasicGeneration()
     {
-        $res = TinyUuid::tinyUuid();
-        $this->assertEquals('TEST', $res);
+        // Validate the default length of 6 characters
+        $shortId = TinyUuid::tinyUuid();
+        $this->assertEquals(6, strlen($shortId));
+
+        // Validate the minimum length is 4 characters
+        $shortId = TinyUuid::tinyUuid(2);
+        $this->assertEquals(4, strlen($shortId));
+
+        // Validate the minimum length is 128 characters
+        $shortId = TinyUuid::tinyUuid(200);
+        $this->assertEquals(128, strlen($shortId));
     }
 }
