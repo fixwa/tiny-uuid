@@ -1,8 +1,8 @@
 <?php
-namespace TinyUuid\Test;
+namespace Fixwa\TinyUuid\Test;
 
 use PHPUnit\Framework\TestCase;
-use TinyUuid\TinyUuid;
+use Fixwa\TinyUuid\TinyUuid;
 
 class TinyUuidTest extends TestCase
 {
