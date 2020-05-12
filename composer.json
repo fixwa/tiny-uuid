@@ -1,5 +1,5 @@
 {
-  "name": "vendor_name/tiny-uuid",
+  "name": "fixwa/tiny-uuid",
   "description": "This library generates a short alphanumeric unique ID.",
   "minimum-stability": "stable",
   "type": "library",
