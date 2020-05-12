@@ -1,9 +1,2 @@
 /vendor
 .idea
-composer.phar
-composer.lock
-.env.*.php
-.env.php
-.environment
-.DS_Store
-Thumbs.db
