@@ -3,7 +3,7 @@
   "description": "This library generates a short alphanumeric unique ID.",
   "minimum-stability": "stable",
   "type": "library",
-  "license": "The Unlicense",
+  "license": "MIT",
   "authors": [
     {
       "name": "Pablo Nuñez",
